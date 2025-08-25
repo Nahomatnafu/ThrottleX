@@ -76,6 +76,10 @@ body {
 }
 
 /* Navigation */
+.main-nav {
+    margin-left: -80px; /* Shift navigation toward the logo */
+}
+
 .main-nav ul {
     display: flex;
     list-style: none;
@@ -243,6 +247,141 @@ body {
     width: auto;
 }
 
+/* Services Section */
+.services-section {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.services-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.services-title-black {
+    color: black;
+}
+
+.services-title-blue {
+    color: #0066CC;
+}
+
+.services-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 18px;
+    color: #4B5563;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow:
+        -4px 4px 20px rgba(0, 0, 0, 0.1),
+        4px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        -6px 8px 30px rgba(0, 0, 0, 0.15),
+        6px 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content {
+    padding: 24px 20px;
+    text-align: left;
+}
+
+.card-icon {
+    margin-bottom: 16px;
+}
+
+.card-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 24px;
+    color: black;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    color: #4B5563;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.card-btn {
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px; /* Pill shape */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+.card-btn:active {
+    transform: translateY(0);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
@@ -283,5 +422,38 @@ body {
 
     .hero-btn {
         width: 200px;
+    }
+
+    .services-section {
+        padding: 60px 0;
+    }
+
+    .services-header {
+        margin-bottom: 50px;
+    }
+
+    .services-title {
+        font-size: 28px;
+    }
+
+    .services-description {
+        font-size: 16px;
+    }
+
+    .services-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card-content {
+        padding: 24px 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 14px;
     }
 }
