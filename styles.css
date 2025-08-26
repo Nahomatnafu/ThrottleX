@@ -483,6 +483,101 @@ body {
     margin: 0;
 }
 
+/* Adventure Gallery Section */
+.adventure-gallery-section {
+    background-color: white;
+    padding: 100px 0;
+}
+
+.adventure-gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.adventure-gallery-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.adventure-gallery-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.adventure-gallery-title-black {
+    color: black;
+}
+
+.adventure-gallery-title-blue {
+    color: #0066CC;
+}
+
+.adventure-gallery-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 18px;
+    color: #4B5563;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.adventure-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-button-container {
+    text-align: center;
+}
+
+.gallery-btn {
+    background-color: #0066CC;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 16px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.gallery-btn:hover {
+    background-color: #0052A3;
+    transform: translateY(-2px);
+}
+
+.gallery-btn:active {
+    transform: translateY(0);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
@@ -589,5 +684,32 @@ body {
 
     .why-choose-us-card .card-description {
         font-size: 14px;
+    }
+
+    .adventure-gallery-section {
+        padding: 60px 0;
+    }
+
+    .adventure-gallery-header {
+        margin-bottom: 40px;
+    }
+
+    .adventure-gallery-title {
+        font-size: 28px;
+    }
+
+    .adventure-gallery-description {
+        font-size: 16px;
+    }
+
+    .adventure-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .gallery-btn {
+        font-size: 14px;
+        padding: 12px 32px;
     }
 }
