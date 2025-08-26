@@ -382,6 +382,107 @@ body {
     transform: translateY(0);
 }
 
+/* Why Choose Us Section */
+.why-choose-us-section {
+    background-color: #E5E7EB;
+    padding: 100px 0;
+}
+
+.why-choose-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.why-choose-us-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.why-choose-us-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.why-choose-us-title-black {
+    color: black;
+}
+
+.why-choose-us-title-blue {
+    color: #0066CC;
+}
+
+.why-choose-us-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 18px;
+    color: #4B5563;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.why-choose-us-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-us-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow:
+        -4px 4px 20px rgba(0, 0, 0, 0.1),
+        4px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-choose-us-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        -6px 8px 30px rgba(0, 0, 0, 0.15),
+        6px 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon-circle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px auto;
+}
+
+.card-icon-circle img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.why-choose-us-card .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.why-choose-us-card .card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    color: #4B5563;
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
@@ -454,6 +555,39 @@ body {
     }
 
     .card-description {
+        font-size: 14px;
+    }
+
+    .why-choose-us-section {
+        padding: 60px 0;
+    }
+
+    .why-choose-us-header {
+        margin-bottom: 50px;
+    }
+
+    .why-choose-us-title {
+        font-size: 28px;
+    }
+
+    .why-choose-us-description {
+        font-size: 16px;
+    }
+
+    .why-choose-us-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .why-choose-us-card {
+        padding: 30px 24px;
+    }
+
+    .why-choose-us-card .card-title {
+        font-size: 18px;
+    }
+
+    .why-choose-us-card .card-description {
         font-size: 14px;
     }
 }
