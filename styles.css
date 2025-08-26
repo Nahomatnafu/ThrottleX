@@ -580,6 +580,115 @@ body {
     transform: translateY(0);
 }
 
+/* What Our Adventurers Say Section */
+.testimonials-section {
+    background-color: #0066CC;
+    padding: 100px 0;
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonials-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 36px;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.testimonials-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.testimonial-info {
+    flex: 1;
+}
+
+.testimonial-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 20px;
+    color: #111111;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+}
+
+.testimonial-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    color: #4B5563;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.testimonial-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+}
+
+.testimonial-stars img {
+    width: 20px;
+    height: 20px;
+}
+
 /* Gallery Page Styles */
 .gallery-page-section {
     background-color: white;
@@ -854,5 +963,47 @@ body {
     .gallery-back-btn {
         font-size: 14px;
         padding: 12px 32px;
+    }
+
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .testimonials-header {
+        margin-bottom: 40px;
+    }
+
+    .testimonials-title {
+        font-size: 28px;
+    }
+
+    .testimonials-description {
+        font-size: 16px;
+    }
+
+    .testimonials-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .testimonial-card {
+        padding: 24px;
+    }
+
+    .testimonial-name {
+        font-size: 18px;
+    }
+
+    .testimonial-title {
+        font-size: 14px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+    }
+
+    .testimonial-stars img {
+        width: 18px;
+        height: 18px;
     }
 }
