@@ -1006,4 +1006,198 @@ body {
         width: 18px;
         height: 18px;
     }
+
+    .pricing-section {
+        padding: 60px 0;
+    }
+
+    .pricing-header {
+        margin-bottom: 40px;
+    }
+
+    .pricing-title {
+        font-size: 28px;
+    }
+
+    .pricing-description {
+        font-size: 16px;
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .pricing-card-content {
+        padding: 24px 20px;
+    }
+
+    .pricing-card-title {
+        font-size: 20px;
+    }
+
+    .price-amount {
+        font-size: 28px;
+    }
+
+    .pricing-features li {
+        font-size: 14px;
+    }
+
+    .pricing-book-btn {
+        font-size: 14px;
+        padding: 14px 28px;
+    }
+}
+
+/* Adventure Pricing Section */
+.pricing-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.pricing-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.pricing-title-black {
+    color: #000000;
+}
+
+.pricing-title-blue {
+    color: #0066CC;
+}
+
+.pricing-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4B5563;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card-header {
+    background-color: #0066CC;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-symbol {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.pricing-card-content {
+    padding: 30px 32px;
+}
+
+.pricing-card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing-price {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price-amount {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #0066CC;
+}
+
+.price-period {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6B7280;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.pricing-features li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #111111;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.pricing-features li img {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.pricing-book-btn {
+    width: 100%;
+    background-color: #0066CC;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.pricing-book-btn:hover {
+    background-color: #0052A3;
+    transform: translateY(-2px);
 }
