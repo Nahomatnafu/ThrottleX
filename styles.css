@@ -601,9 +601,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700; /* Bold */
     font-size: 36px;
-    color: white;
+    color: #FFD700; /* Golden color */
     line-height: 1.2;
     margin-bottom: 20px;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.testimonials-title:hover {
+    color: white;
 }
 
 .testimonials-description {
@@ -685,8 +691,8 @@ body {
 }
 
 .testimonial-stars img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 24px;
 }
 
 /* Gallery Page Styles */
@@ -1004,7 +1010,7 @@ body {
 
     .testimonial-stars img {
         width: 18px;
-        height: 18px;
+        height: 24px;
     }
 
     .pricing-section {
