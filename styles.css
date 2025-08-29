@@ -1435,16 +1435,32 @@ body {
 }
 
 .social-link img {
-  width: 24px;
-  height: 24px;
   object-fit: contain;
 }
 
-/* Slightly larger Facebook logo */
-.social-link-facebook img {
-  width: 28px;
-  height: 28px;
+
+/* Booking section social media icon sizes */
+.booking-section .social-link img[src*="facebook"] {
+  width: 23px;
+  height: 23px;
 }
+
+.booking-section .social-link img[src*="instagram"] {
+  width: 23px;
+  height: 23px;
+}
+
+.booking-section .social-link img[src*="tiktok"] {
+  width: 23px;
+  height: 23px;
+}
+
+.booking-section .social-link img[src*="youtube"] {
+  width: 23px;
+  height: 23px;
+}
+
+
 
 /* Footer Section */
 /* Footer base */
@@ -1524,10 +1540,28 @@ body {
   height: 20px;
   object-fit: contain;
 }
-.social-link-facebook img {
-  width: 22px;
-  height: 22px;
-} /* FB a touch larger as requested */
+
+/* Footer social media icon sizes - 2x larger */
+.footer .social-link-facebook img {
+  width: 23px;
+  height: 23px;
+}
+
+.footer .social-link-instagram img {
+  width: 23px;
+  height: 23px;
+}
+
+.footer .social-link-youtube img {
+  width: 23px;
+  height: 23px;
+}
+
+/* TikTok stays the same size as it looks good */
+.social-link-tiktok img {
+  width: 23px;
+  height: 23px;
+}
 
 /* Column headings & lists */
 .footer__heading {
@@ -1616,7 +1650,7 @@ body {
 .footer__bottom {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px 36px;    /* more vertical padding */
+  padding: 20px 24px 36px;    /* added top padding to center text better */
   font-size: 16px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
