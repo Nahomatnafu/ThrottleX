@@ -1435,14 +1435,191 @@ body {
 }
 
 .social-link img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 /* Slightly larger Facebook logo */
 .social-link-facebook img {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
+/* Footer Section */
+/* Footer base */
+.footer {
+  background: #333333;
+  color: #e5e7eb; /* light gray text for contrast */
+  font-family: "Montserrat", sans-serif; /* assume Montserrat is already loaded */
+}
+
+.footer__inner {
+  max-width: 1200px; /* change if you want wider/narrower */
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.2fr 1fr;
+  gap: 48px;
+}
+
+/* Brand block */
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer__logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.footer__brand-title {
+  margin: 0;
+  font-weight: 700; /* Bold */
+  font-size: 24px; /* Montserrat Bold 24px */
+  letter-spacing: 0.3px;
+  line-height: 1;
+}
+.footer__brand-throttle {
+  color: #ffffff;
+}
+.footer__brand-x {
+  color: #0066cc;
+}
+
+.footer__tagline {
+  margin: 10px 0 16px;
+  font-weight: 400; /* Regular */
+  font-size: 16px; /* Montserrat Regular 16px */
+  color: #e5e7eb;
+}
+
+/* Social icons (uses your existing social-link styles) */
+.footer__social {
+  display: flex;
+  gap: 12px;
+}
+
+/* Ensure white circular buttons stay small and consistent */
+.social-link {
+  width: 40px;
+  height: 40px; /* slightly smaller dots */
+  background: #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.social-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.social-link-facebook img {
+  width: 22px;
+  height: 22px;
+} /* FB a touch larger as requested */
+
+/* Column headings & lists */
+.footer__heading {
+  margin: 4px 0 12px;
+  font-weight: 700; /* Bold */
+  font-size: 20px; /* Montserrat Bold 20px */
+  color: #ffffff;
+}
+
+.footer__links,
+.footer__contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links a {
+  font-weight: 400; /* Regular */
+  font-size: 16px; /* Montserrat Regular 16px */
+  color: #e5e7eb;
+  text-decoration: none;
+}
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+/* Contact rows with symbols */
+.footer__contact li {
+  display: grid;
+  grid-template-columns: 22px 1fr; /* icon + text */
+  align-items: start;
+  gap: 10px;
+  font-size: 16px;
+}
+.footer__contact img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-top: 2px;
+}
+
+/* CTA button (pill) */
+.footer__cta {
+  width: 156px; 
+  height: 40px;
+  border-radius: 50px;
+  background: #0066CC;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;          /* Medium */
+  font-size: 16px;           /* Explicit */
+  border: none;
+  cursor: pointer;
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+}
+.footer__cta:hover { filter: brightness(1.05); }
+
+/* Contact rows — keep location on one line */
+.footer__contact li span {
+  white-space: nowrap;   /* prevent wrap */
+}
+
+/* Footer grid spacing */
+.footer__inner {
+  max-width: 1280px;        /* wider than before */
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr 1.2fr 1fr;
+  gap: 64px;                /* increased gap */
+}
+
+/* Divider & bottom line with more vertical space */
+.footer__rule {
+  border: 0; 
+  height: 1px; 
+  background: #374151;
+  margin: 36px 0 20px;     /* more breathing room */
+}
+
+.footer__bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 36px;    /* more vertical padding */
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: #e5e7eb;
+  text-align: center;
+}
