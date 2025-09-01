@@ -45,8 +45,8 @@ export default function WhyChooseUsSection() {
       <div className="why-choose-us-container">
         <div className="why-choose-us-header">
           <h2 className="why-choose-us-title">
-            <span className="why-choose-us-title-black">Why Choose</span><br />
-            <span className="why-choose-us-title-blue">ThrottleX</span>
+            <span className="why-choose-us-title-black">WHY CHOOSE</span><br />
+            <span className="why-choose-us-title-blue">THROTTLEX ?</span>
           </h2>
           <p className="why-choose-us-description">
             Experience the difference with our premium service<br />

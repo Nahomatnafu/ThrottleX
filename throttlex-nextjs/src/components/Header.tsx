@@ -12,28 +12,28 @@ export default function Header() {
       <header className="main-header">
         <div className="header-container">
           {/* Logo */}
-          <div className="logo">
+          <Link href="/" className="logo">
             <div className="logo-water"></div>
             <div className="logo-text">
               <span className="logo-throttle">THROTTLE</span>
               <span className="logo-x"> X</span>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="main-nav">
             <ul>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#why-choose-us">Why Choose Us</a></li>
+              <li><Link href="/#services">Services</Link></li>
+              <li><Link href="/#why-choose-us">Why Choose Us</Link></li>
               <li><Link href="/gallery">Gallery</Link></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><Link href="/#pricing">Pricing</Link></li>
+              <li><Link href="/#contact">Contact</Link></li>
             </ul>
           </nav>
 
           {/* Book Now Button */}
           <div className="book-now-container">
-            <button className="book-now-btn">Book Now</button>
+            <Link href="/#contact" className="book-now-btn">Book Now</Link>
           </div>
         </div>
       </header>

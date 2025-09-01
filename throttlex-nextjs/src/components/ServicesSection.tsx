@@ -37,8 +37,8 @@ export default function ServicesSection() {
       <div className="services-container">
         <div className="services-header">
           <h2 className="services-title">
-            <span className="services-title-black">Our Water</span><br />
-            <span className="services-title-blue">Adventures</span>
+            <span className="services-title-black">OUR THRILLING</span><br />
+            <span className="services-title-blue">SERVICES</span>
           </h2>
           <p className="services-description">
             Choose from our exciting range of water activities<br />

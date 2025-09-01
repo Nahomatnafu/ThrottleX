@@ -61,8 +61,8 @@ export default function PricingSection() {
       <div className="pricing-container">
         <div className="pricing-header">
           <h2 className="pricing-title">
-            <span className="pricing-title-black">Adventure</span><br />
-            <span className="pricing-title-blue">Pricing</span>
+            <span className="pricing-title-black">ADVENTURE</span><br />
+            <span className="pricing-title-blue">PACKAGES</span>
           </h2>
           <p className="pricing-description">
             Choose the perfect package for<br />

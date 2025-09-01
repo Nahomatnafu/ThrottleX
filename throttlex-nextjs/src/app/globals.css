@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: auto;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
@@ -49,6 +53,11 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
 }
 
 .logo-water {
@@ -113,11 +122,14 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .book-now-btn:hover {
   background-color: #0052a3;
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .book-now-btn:active {
@@ -226,6 +238,7 @@ body {
 .hero-btn-primary:hover {
   background-color: #0052a3;
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .hero-btn-secondary {
@@ -236,6 +249,7 @@ body {
 .hero-btn-secondary:hover {
   background-color: #f0f0f0;
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .hero-decoration {
@@ -825,6 +839,7 @@ body {
 .gallery-back-btn:hover {
   background-color: #0052a3;
   transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .gallery-back-btn:active {
@@ -835,6 +850,14 @@ body {
 .main-nav a.active {
   color: #0066cc !important;
   font-weight: 700;
+}
+
+/* Tablet/Medium screens */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .gallery-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
 }
 
 /* Responsive Design */
@@ -989,7 +1012,7 @@ body {
   }
 
   .gallery-page-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-bottom: 40px;
   }

@@ -2,15 +2,15 @@ import Image from 'next/image';
 
 export default function BookingSection() {
   return (
-    <section className="booking-section">
+    <section id="contact" className="booking-section">
       <div className="booking-container">
         <div className="booking-card">
           {/* Left Side - Booking Form */}
           <div className="booking-form-side">
             <div className="booking-header">
               <h2 className="booking-title">
-                <span className="booking-title-black">Book Your</span>
-                <span className="booking-title-blue">Adventure</span>
+                <span className="booking-title-black">BOOK YOUR</span>
+                <span className="booking-title-blue">ADVENTURE</span>
               </h2>
               <p className="booking-description">
                 Ready to experience the thrill? Reserve your adventure now and<br />

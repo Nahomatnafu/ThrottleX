@@ -3,19 +3,19 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export default function Gallery() {
-  // Generate 15 gallery items with colorful backgrounds
-  const galleryItems = Array.from({ length: 15 }, (_, index) => index + 1);
+  // Generate 12 gallery items with colorful backgrounds (4x3 grid)
+  const galleryItems = Array.from({ length: 12 }, (_, index) => index + 1);
 
   return (
     <>
       <Header />
-      
+
       <section className="gallery-page-section">
         <div className="gallery-page-container">
           <div className="gallery-page-header">
             <h1 className="gallery-page-title">
-              <span className="gallery-page-title-black">Adventure</span><br />
-              <span className="gallery-page-title-blue">Gallery</span>
+              <span className="gallery-page-title-black">ADVENTURE</span><br />
+              <span className="gallery-page-title-blue">GALLERY</span>
             </h1>
             <p className="gallery-page-description">
               Explore our collection of thrilling water adventures<br />

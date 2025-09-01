@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -16,16 +17,16 @@ export default function HeroSection() {
       </div>
       <div className="hero-content">
         <h1 className="hero-title">
-          <span className="hero-title-white">Experience the</span><br />
-          <span className="hero-title-blue">Ultimate Thrill</span>
+          <span className="hero-title-white">RIDE THE WAVES</span><br />
+          <span className="hero-title-blue">OWN THE ADVENTURE</span>
         </h1>
         <p className="hero-description">
-          Rent premium jet skis and explore Miami&apos;s stunning waters.<br />
-          Adventure awaits on every wave!
+          Experience the ultimate thrill on Miami&apos;s crystal-clear waters<br />
+          with our premium jet ski and boat rentals
         </p>
         <div className="hero-buttons">
-          <button className="hero-btn hero-btn-primary">Book Your Adventure</button>
-          <button className="hero-btn hero-btn-secondary">View Our Fleet</button>
+          <Link href="#contact" className="hero-btn hero-btn-primary">Book Your Adventure</Link>
+          <Link href="#services" className="hero-btn hero-btn-secondary">Explore Services</Link>
         </div>
       </div>
       <div className="hero-decoration">

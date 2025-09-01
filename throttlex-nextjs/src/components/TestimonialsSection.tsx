@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
     <section className="testimonials-section">
       <div className="testimonials-container">
         <div className="testimonials-header">
-          <h2 className="testimonials-title">What Our Adventurers Say</h2>
+          <h2 className="testimonials-title">WHAT OUR ADVENTURERS SAY</h2>
           <p className="testimonials-description">
             Real experiences from our satisfied customers
           </p>

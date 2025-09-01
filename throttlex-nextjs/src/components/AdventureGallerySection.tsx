@@ -8,10 +8,7 @@ export default function AdventureGallerySection() {
     '/design-files/adventure_3.jpg',
     '/design-files/adventure_4.jpg',
     '/design-files/adventure_5.jpg',
-    '/design-files/adventure_6.png',
-    '/design-files/adventure_7.png',
-    '/design-files/adventure_8.png',
-    '/design-files/adventure_9.png'
+    '/design-files/adventure_6.png'
   ];
 
   return (
@@ -19,8 +16,8 @@ export default function AdventureGallerySection() {
       <div className="adventure-gallery-container">
         <div className="adventure-gallery-header">
           <h2 className="adventure-gallery-title">
-            <span className="adventure-gallery-title-black">Adventure</span><br />
-            <span className="adventure-gallery-title-blue">Gallery</span>
+            <span className="adventure-gallery-title-black">ADVENTURE</span><br />
+            <span className="adventure-gallery-title-blue">GALLERY</span>
           </h2>
           <p className="adventure-gallery-description">
             See the excitement and joy our customers experience<br />

@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Column 1: Brand */}
         <div className="footer__col">
           <div className="footer__brand">
-            <Image src="/design-files/ThrottleX Logo.png" alt="Throttle X" className="footer__logo" width={32} height={32} />
+            <Image src="/design-files/Throttle_footer.png" alt="Throttle X" className="footer__logo" width={32} height={32} />
             <h3 className="footer__brand-title">
               <span className="footer__brand-throttle">THROTTLE</span>
               <span className="footer__brand-x">X</span>
